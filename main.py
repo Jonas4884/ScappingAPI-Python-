@@ -15,6 +15,6 @@ if __name__ == "__main__":
 app = FastAPI()
 quotes = Scraper()
 @app.get("/{param}")
-async def read_item(param):
+async def main(param):
     return quotes.scrapedata(param)
 
